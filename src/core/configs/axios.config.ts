@@ -1,7 +1,6 @@
 import axios, {AxiosResponse, InternalAxiosRequestConfig} from 'axios';
 import {environment} from './app.config';
 import {store} from '@/store/store.config';
-import {setLoader} from '@/store/store.reducer';
 import {errorToast} from '../shared/toast/toast';
 import {getToken} from '@/core/helpers/local-storage';
 import {paginationConfig} from '@/core/configs/pagination.config';
@@ -11,7 +10,6 @@ const axiosInstance = axios.create({
 });
 axiosInstance.interceptors.request.use(
     (config: InternalAxiosRequestConfig) => {
-        store.dispatch(setLoader(true));
         if (getToken()) {
             config.headers.set('Authorization', `Bearer ${getToken()}`);
         }
@@ -24,7 +22,6 @@ axiosInstance.interceptors.request.use(
 
         };
     }, (error: any) => {
-        store.dispatch(setLoader(true));
         return Promise.reject(error);
     });
 
@@ -43,7 +40,7 @@ axiosInstance.interceptors.response.use(
         // if (response.data) {
         //     store.dispatch(setLoader(false));
         // }
-        store.dispatch(setLoader(false));
+
 
         return response;
     },
@@ -73,7 +70,6 @@ axiosInstance.interceptors.response.use(
         }
 
         errorToast(error.response.data);
-        store.dispatch(setLoader(false));
         return Promise.reject(error);
     }
 );
