@@ -1,0 +1,72 @@
+@import "../../../assets/styles/style.scss";
+
+.sunhero{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation-name: reverseScale;
+  transform: scale(5);
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.sunhero-logo{
+  position: absolute;
+  opacity: 0;
+  animation-name: opacityChange;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reverseScale {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    transform: scale(5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px){
+
+  .sunhero{
+    margin-top: 20px;
+  }
+
+  .sunhero-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sunhero-logo svg{
+    width: 55%;
+  }
+}

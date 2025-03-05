@@ -1,0 +1,55 @@
+@import "../../../assets/styles/style.scss";
+
+.comments {
+
+  padding: 100px 0 200px 0;
+
+  &-heading{
+    &-text{
+      font-family: 'Saira Light';
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 37px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 64px;
+
+    }
+  }
+
+  &-slider{
+
+    &-main{
+      overflow: hidden;
+    }
+  }
+}
+
+
+.swiper-slide {
+  width: 517px !important;
+  height: 657px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+@media (max-width: 767px) {
+
+  .comments {
+   padding: 50px 0 50px 0;
+    &-heading{
+      &-text{
+        font-size: 36px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    width: 90vw !important;
+  }
+}

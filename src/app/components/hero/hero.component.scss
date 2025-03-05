@@ -1,0 +1,100 @@
+@import "../../../assets/styles/style.scss";
+
+.hero{
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(112.77deg, #050617 0.32%, #05082C 100.57%);
+  &-text{
+
+    transform: translateY(-250px);
+
+    &__title{
+      font-size: 40px;
+      font-family: "Saira Regular";
+      line-height: 37px;
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: 500;
+      opacity: 0;
+      animation-name: titleVisible;
+      animation-duration: 0.8s;
+      animation-delay: 6s;
+      animation-fill-mode: forwards;
+    }
+
+    &__paragraph{
+      margin-top: 32px;
+      font-size: 20px;
+      font-family: "Saira Light";
+      line-height: 31.48px;
+      color: #FFFFFF;
+      font-weight: 300;
+      text-align: center;
+      opacity: 0;
+      transform: translate(0, 100%);
+      animation-name: textVisible;
+      animation-duration: 0.8s;
+      animation-delay: 6s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes titleVisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textVisible {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero{
+
+    padding-top: 30px;
+
+    &-text{
+      transform: translateY(0);
+
+      &__title{
+        font-size: 32px;
+      }
+
+      &__paragraph{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero{
+
+    //padding-top: 30px;
+
+    &-text{
+      transform: translateY(-90px);
+
+      &__title{
+        //font-size: 32px;
+      }
+
+      &__paragraph{
+        //font-size: 16px;
+      }
+    }
+  }
+}
+
