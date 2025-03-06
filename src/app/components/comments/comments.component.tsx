@@ -36,7 +36,7 @@ const CommentsComponent = () => {
                                 <Swiper
                                     centeredSlides={true}
                                     spaceBetween={60}
-                                    slidesPerView={'auto'}
+                                    slidesPerView={5}
                                     loop={true}
                                     autoplay={{
                                         delay: 3000,
@@ -62,18 +62,7 @@ const CommentsComponent = () => {
                                             );
                                         })
                                     }
-                                    {/*// <SwiperSlide key={1}>*/}
-                                    {/*//     <CommentsCardComponent/>*/}
-                                    {/*// </SwiperSlide>*/}
-                                    {/*// <SwiperSlide key={2}>*/}
-                                    {/*//     <CommentsCardComponent/>*/}
-                                    {/*// </SwiperSlide>*/}
-                                    {/*// <SwiperSlide key={3}>*/}
-                                    {/*//     <CommentsCardComponent/>*/}
-                                    {/*// </SwiperSlide>*/}
-                                    {/*// <SwiperSlide key={3}>*/}
-                                    {/*//     <CommentsCardComponent/>*/}
-                                    {/*// </SwiperSlide>*/}
+
                                 </Swiper>
                             </div>
 

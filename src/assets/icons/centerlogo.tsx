@@ -1,16 +1,16 @@
 export const CenterLogo = () =>{
     return (
         <svg xmlns='http://www.w3.org/2000/svg' width='208' height='233' viewBox='0 0 208 233' fill='none'>
-            <foreignObject x='-7.3' y='-7.3' width='222.6' height='247.6'>
-                <div
-                    style={{
-                        backdropFilter: 'blur(3.65px)',
-                        clipPath: 'url(#bgblur_0_2013_111_clip_path)',
-                        height: '100%',
-                        width: '100%'
-                    }}
-                ></div>
-            </foreignObject>
+            {/*<foreignObject x='-7.3' y='-7.3' width='222.6' height='247.6'>*/}
+            {/*    <div*/}
+            {/*        style={{*/}
+            {/*            backdropFilter: 'blur(3.65px)',*/}
+            {/*            clipPath: 'url(#bgblur_0_2013_111_clip_path)',*/}
+            {/*            height: '100%',*/}
+            {/*            width: '100%'*/}
+            {/*        }}*/}
+            {/*    ></div>*/}
+            {/*</foreignObject>*/}
             <rect
                 data-figma-bg-blur-radius='7.3'
                 x='3'
