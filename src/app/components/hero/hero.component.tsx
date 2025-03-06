@@ -11,10 +11,10 @@ import {useEffect} from 'react';
 const HeroComponent =  () => {
 
     useEffect(() => {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflowY = 'hidden';
 
         setTimeout(()=>{
-            document.body.style.overflow = 'scroll';
+            document.body.style.overflowY = 'scroll';
         }, 6800);
     }, []);
 
