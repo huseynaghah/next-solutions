@@ -1,7 +1,7 @@
 import axios, {AxiosResponse, InternalAxiosRequestConfig} from 'axios';
 import {environment} from './app.config';
 import {store} from '@/store/store.config';
-import {errorToast} from '../shared/toast/toast';
+// import {errorToast} from '../shared/toast/toast';
 import {getToken} from '@/core/helpers/local-storage';
 import {paginationConfig} from '@/core/configs/pagination.config';
 
@@ -69,7 +69,7 @@ axiosInstance.interceptors.response.use(
                 errMessage = 'Xəta baş verdi';
         }
 
-        errorToast(error.response.data);
+        // errorToast(error.response.data);
         return Promise.reject(error);
     }
 );
