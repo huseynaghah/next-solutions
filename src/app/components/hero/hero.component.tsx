@@ -6,9 +6,17 @@ import './hero.component.scss';
 import {InView} from 'react-intersection-observer';
 import {store} from '@/store/store.config';
 import {setActiveSection} from '@/store/store.reducer';
+import {useEffect} from 'react';
 
 const HeroComponent =  () => {
 
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(()=>{
+            document.body.style.overflow = 'scroll';
+        }, 6800);
+    }, []);
 
     return (
 
