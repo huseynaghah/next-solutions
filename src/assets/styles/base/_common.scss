@@ -43,11 +43,12 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $main;
+  background-color: #05082C;
+  box-shadow: inset 0 0 5px #05082C;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $main;
+  background: #DD2121;
 }
 
 @include breakpoint($lg) {
