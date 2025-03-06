@@ -18,7 +18,7 @@ const SunheroComponent = () => {
 
     return (
         <div className={'sunhero'}>
-            {/*<Lottie animationData={animationData} loop={true}/>*/}
+            <Lottie animationData={animationData} loop={true}/>
             <div className={'sunhero-logo'}>
                 <CenterLogo/>
             </div>
