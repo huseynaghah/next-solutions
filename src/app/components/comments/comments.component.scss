@@ -18,9 +18,8 @@
   }
 
   &-slider{
-
     &-main{
-      overflow: hidden;
+      overflow: hidden !important;
     }
   }
 }

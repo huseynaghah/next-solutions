@@ -111,6 +111,12 @@
 //}
 
 @media (max-width: 998px) {
+
+  .navbar{
+    height: 75px;
+    padding: 0 20px;
+  }
+
   .navbar--content__links {
     display: none;
   }

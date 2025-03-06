@@ -18,7 +18,12 @@ const SunheroComponent = () => {
 
     return (
         <div className={'sunhero'}>
-            <Lottie animationData={animationData} loop={true}/>
+            <div className={'sun-with-lottie'}>
+                <Lottie animationData={animationData} loop={true}/>
+            </div>
+            <div className={'sun-static'}>
+                <img src={'images/sun_static.png'} alt='sun'/>
+            </div>
             <div className={'sunhero-logo'}>
                 <CenterLogo/>
             </div>

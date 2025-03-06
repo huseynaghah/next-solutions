@@ -36,20 +36,23 @@ const CommentsComponent = () => {
                                 <Swiper
                                     centeredSlides={true}
                                     spaceBetween={60}
-                                    slidesPerView={5}
+                                    slidesPerView={'auto'}
                                     loop={true}
                                     autoplay={{
                                         delay: 3000,
                                         disableOnInteraction: false,
                                     }}
                                     speed={1000}
+                                    watchOverflow={true}
+                                    watchSlidesProgress={true}
+                                    freeMode={true}
                                     modules={[Autoplay]}
                                     className='comments-slider-main'
                                 >
                                     {
-                                        comments.map((user, i) => {
+                                        [...comments, ...comments].map((user, i) => {
                                             return (
-                                                <SwiperSlide key={i}>
+                                                <SwiperSlide key={i} lazy={false}>
                                                     <CommentsCardComponent
                                                         key={i + 'a'}
                                                         comment={user.comment}
